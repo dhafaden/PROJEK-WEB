@@ -4,8 +4,6 @@ body {
     background: #f4f4f4;
     color: #333;
 }
-
-/* Navbar */
 nav {
     background: #004d40;
     padding: 15px;
@@ -20,8 +18,6 @@ nav a {
     text-decoration: none;
     font-weight: bold;
 }
-
-/* Login / form */
 .container {
     display: flex;
     justify-content: center;
@@ -64,7 +60,7 @@ select {
     background: #004d40;
 }
 
-/* Dashboard */
+
 .wrapper {
     display: flex;
     min-height: 100vh;
@@ -100,7 +96,7 @@ main {
     background: #f9f9f9;
 }
 
-/* Section */
+
 .section {
     background: white;
     padding: 24px;
@@ -113,7 +109,7 @@ main {
     margin-bottom: 14px;
 }
 
-/* Organisasi */
+
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -130,7 +126,6 @@ main {
     line-height: 1.5;
 }
 
-/* Table */
 table {
     width: 100%;
     border-collapse: collapse;
