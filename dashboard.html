@@ -1,44 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard | NILAVIA</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="wrapper">
         <aside>
-            <h2>NILAVIA</h2>
-            <p style="cursor:pointer" onclick="show('v-cari')">Cari Organisasi</p>
-            <p style="cursor:pointer" onclick="show('v-status')">Status Pendaftaran</p>
-            <p style="cursor:pointer" onclick="show('v-profil')">Profil Saya</p>
-            <a href="index.html" style="color: #ffab91; text-decoration: none; display: block; margin-top: 20px;">Logout</a>
-        </aside>
+    <h2>NILAVIA</h2>
+    <a href="#organisasi">Cari Organisasi</a>
+    <a href="profil.html">Profil Saya</a>
+    <a href="index.html" class="logout">Logout</a>
+</aside>
+
         <main>
-            <div id="v-cari" class="section active-section">
-                <h2>Organisasi Tersedia</h2>
-                <table>
-                    <tr><th>Organisasi</th><th>Aksi</th></tr>
-                    <tr><td>BEM Unila</td><td><button onclick="alert('Berhasil Daftar')">Daftar</button></td></tr>
-                </table>
-            </div>
-            <div id="v-status" class="section">
-                <h2>Status Pendaftaran</h2>
-                <p>BEM Universitas Lampung: <b>Proses Seleksi</b></p>
-            </div>
-            <div id="v-profil" class="section">
-                <h2>Profil Mahasiswa</h2>
-                <p><b>Nama:</b> Fahmi Isma Yuda Sena</p>
-                <p><b>NPM:</b> 2417051062</p>
-                <p><b>Status:</b> Mahasiswa Aktif</p>
-            </div>
+            <section id="organisasi" class="section">
+    <h2>Organisasi Tersedia</h2>
+
+    <table>
+        <tr>
+            <th>Organisasi</th>
+            <th>Status</th>
+            <th>Aksi</th>
+        </tr>
+
+        <tr>
+            <td>BEM Universitas Lampung</td>
+            <td><span class="status-open">Masih Dibuka</span></td>
+            <td><button class="btn-open">Daftar</button></td>
+        </tr>
+
+        <tr>
+            <td>DPM Universitas Lampung</td>
+            <td><span class="status-open">Masih Dibuka</span></td>
+            <td><button class="btn-open">Daftar</button></td>
+        </tr>
+
+        <tr>
+            <td>Anemon</td>
+            <td><span class="status-close">Sudah Tutup</span></td>
+            <td><button class="btn-close" disabled>Ditutup</button></td>
+        </tr>
+
+        <tr>
+            <td>Birohmah</td>
+            <td><span class="status-open">Masih Dibuka</span></td>
+            <td><button class="btn-open">Daftar</button></td>
+        </tr>
+
+        <tr>
+            <td>HIMAKOM</td>
+            <td><span class="status-close">Sudah Tutup</span></td>
+            <td><button class="btn-close" disabled>Ditutup</button></td>
+        </tr>
+    </table>
+</section>
+
+            <section id="detail" class="section active-section">
+                <h2>Detail Organisasi</h2>
+
+                <div class="card">
+                    <h3>BEM Universitas Lampung</h3>
+                    <p>BEM Universitas Lampung merupakan organisasi mahasiswa tingkat universitas yang menjadi wadah aspirasi mahasiswa, pengembangan kepemimpinan, serta pelaksanaan berbagai program kerja kemahasiswaan.</p>
+                </div>
+
+                <div class="card">
+                    <h3>DPM Universitas Lampung</h3>
+                    <p>Lembaga legislatif tertinggi ditingkat universitas atau fakultas yang bertugas membuat peraturan, mengawasi BEM dan menampung aspirasi mahasiswa</p>
+                </div>
+
+                <div class="card">
+                    <h3>Anemon</h3>
+                    <p>Sebuah Unit kegiatan mahasiswa yang berfokus pada olahraga selam dan penelitian kelautan</p>
+                </div>
+
+                <div class="card">
+                    <h3>Birohmah</h3>
+                    <p>Unit kegiatan mahasiswa yang bergerak dibidang dakwah dan pembinaan rohani islam</p>
+                </div>
+
+                <div class="card">
+                    <h3>Himakom</h3>
+                    <p>Himpunan Mahasiswa Ilmu Komputer yang bertugas untuk menaungi mahasiswa jurusan ilmu kommputer FMIPA unila</p>
+                </div>
+            </section>
+
         </main>
     </div>
-
-    <script>
-        function show(id) {
-            document.querySelectorAll('.section').forEach(s => s.classList.remove('active-section'));
-            document.getElementById(id).classList.add('active-section');
-        }
-    </script>
 </body>
 </html>

@@ -5,6 +5,7 @@ body {
     color: #333;
 }
 
+/* Navbar */
 nav {
     background: #004d40;
     padding: 15px;
@@ -20,24 +21,25 @@ nav a {
     font-weight: bold;
 }
 
+/* Login / form */
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    min-height: 80vh;
     flex-direction: column;
 }
 
 .card {
     background: white;
-    padding: 30px;
+    padding: 20px;
     border-radius: 10px;
-    width: 320px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    text-align: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    margin-bottom: 16px;
 }
 
-input, select {
+input,
+select {
     width: 100%;
     margin-bottom: 15px;
     padding: 12px;
@@ -47,7 +49,7 @@ input, select {
 }
 
 .btn {
-    padding: 12px 25px;
+    padding: 10px 20px;
     background: #00796b;
     color: white;
     border: none;
@@ -62,16 +64,34 @@ input, select {
     background: #004d40;
 }
 
+/* Dashboard */
 .wrapper {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 aside {
-    width: 250px;
+    width: 240px;
     background: #004d40;
     color: white;
-    padding: 20px;
+    padding: 28px 20px;
+}
+
+aside h2 {
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+aside a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 8px 0;
+    margin-bottom: 6px;
+}
+
+aside a:hover {
+    color: #ffccbc;
 }
 
 main {
@@ -80,24 +100,45 @@ main {
     background: #f9f9f9;
 }
 
+/* Section */
 .section {
-    display: none;
     background: white;
-    padding: 20px;
-    border-radius: 8px;
+    padding: 24px;
+    border-radius: 10px;
+    margin-bottom: 24px;
 }
 
-.active-section {
-    display: block;
+.section h2 {
+    margin-top: 0;
+    margin-bottom: 14px;
 }
 
+/* Organisasi */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+}
+
+.cards .card h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.cards .card p {
+    margin: 0 0 8px;
+    line-height: 1.5;
+}
+
+/* Table */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
-th, td {
+th,
+td {
     border: 1px solid #eee;
     padding: 12px;
     text-align: left;
@@ -106,4 +147,37 @@ th, td {
 th {
     background: #00796b;
     color: white;
+}
+
+.status-open {
+    color: #2e7d32;
+    font-weight: 600;
+}
+
+.status-close {
+    color: #c62828;
+    font-weight: 600;
+}
+
+.btn-open {
+    background: #2e7d32;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-open:hover {
+    background: #1b5e20;
+}
+
+.btn-close {
+    background: #c62828;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: not-allowed;
+    opacity: 0.9;
 }
