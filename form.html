@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Pendaftaran - NILAVIA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+    <aside>
+        <h2>NILAVIA</h2>
+        <a href="dashboard.html#organisasi">Cari Organisasi</a>
+        <a href="form.html">Daftar Organisasi</a>
+        <a href="profil.html">Profil Saya</a>
+        <a href="index.html" class="logout">Logout</a>
+    </aside>
+
+    <main>
+        <section class="section">
+            <h2>Pendaftaran Organisasi</h2>
+<nav>
+    <a href="form.html">Daftar</a>
+    <a href="status.html">Status</a>
+</nav>
+
+<div class="container">
+    <div class="card" style="width: 400px;">
+        <h2>Pendaftaran Organisasi</h2>
+
+        <form action="success.html" method="GET">
+
+            <input type="text" placeholder="Nama Lengkap" required>
+            <input type="text" placeholder="NIM" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="No. HP" required>
+            <input type="text" placeholder="Fakultas" required>
+            <input type="text" placeholder="Program Studi" required>
+
+            <select required>
+                <option value="">Pilih Organisasi</option>
+                <option>DPM Universitas</option>
+                <option>Anemon</option>
+                <option>Birohmah</option>
+                <option>HIMAKOM</option>
+            </select>
+
+            <textarea placeholder="Motivasi" rows="4" style="width:100%; padding:10px; border:1px solid #ddd; border-radius:5px;"></textarea>
+            <p><b>Masukkan Berkas CV sebagai Persyaratan Pendaftaran (pdf, doc, docx)</b></p>
+            <input type="file">
+
+            <button class="btn" type="submit">Daftar</button>
+
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
