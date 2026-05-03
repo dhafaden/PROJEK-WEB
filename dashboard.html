@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard | NILAVIA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <aside>
+            <h2>NILAVIA</h2>
+            <p style="cursor:pointer" onclick="show('v-cari')">Cari Organisasi</p>
+            <p style="cursor:pointer" onclick="show('v-status')">Status Pendaftaran</p>
+            <p style="cursor:pointer" onclick="show('v-profil')">Profil Saya</p>
+            <a href="index.html" style="color: #ffab91; text-decoration: none; display: block; margin-top: 20px;">Logout</a>
+        </aside>
+        <main>
+            <div id="v-cari" class="section active-section">
+                <h2>Organisasi Tersedia</h2>
+                <table>
+                    <tr><th>Organisasi</th><th>Aksi</th></tr>
+                    <tr><td>BEM Unila</td><td><button onclick="alert('Berhasil Daftar')">Daftar</button></td></tr>
+                </table>
+            </div>
+            <div id="v-status" class="section">
+                <h2>Status Pendaftaran</h2>
+                <p>BEM Universitas Lampung: <b>Proses Seleksi</b></p>
+            </div>
+            <div id="v-profil" class="section">
+                <h2>Profil Mahasiswa</h2>
+                <p><b>Nama:</b> Fahmi Isma Yuda Sena</p>
+                <p><b>NPM:</b> 2417051062</p>
+                <p><b>Status:</b> Mahasiswa Aktif</p>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function show(id) {
+            document.querySelectorAll('.section').forEach(s => s.classList.remove('active-section'));
+            document.getElementById(id).classList.add('active-section');
+        }
+    </script>
+</body>
+</html>
