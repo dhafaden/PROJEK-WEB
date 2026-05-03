@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard Admin | NILAVIA</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="wrapper">
+
+
+<aside>
+    <h2>NILAVIA</h2>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#user">Kelola User</a>
+    <a href="#organisasi">Organisasi</a>
+    <a href="index.html" class="logout">Logout</a>
+</aside>
+
+<main>
+
+
+<section id="dashboard" class="section page">
+    <h2>Dashboard Admin</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>50</h3>
+            <p>Total User</p>
+        </div>
+
+        <div class="card">
+            <h3>5</h3>
+            <p>Organisasi</p>
+        </div>
+
+        <div class="card">
+            <h3>20</h3>
+            <p>Pendaftar</p>
+        </div>
+
+    </div>
+
+    <br>
+
+
+    <div class="card">
+        <h3>Aktivitas Terakhir</h3>
+
+        <p>Berikut aktivitas terbaru di sistem:</p>
+
+        <ul>
+            <li>Admin menambahkan user baru: Panitia BEM</li>
+            <li>Organisasi HIMAKOM ditutup pendaftarannya</li>
+            <li>3 user baru mendaftar hari ini</li>
+            <li>Data organisasi DPM diperbarui</li>
+            <li>Admin menghapus user tidak aktif</li>
+        </ul>
+    </div>
+
+</section>
+
+
+<section id="user" class="section page">
+    <h2>Kelola User</h2>
+
+    <input type="text" placeholder="Cari user...">
+
+    <table>
+        <tr>
+            <th>Nama</th>
+            <th>Role</th>
+            <th>Aksi</th>
+        </tr>
+
+        <tr>
+            <td>Himakom</td>
+            <td>Panitia</td>
+            <td>
+                <button class="btn">Edit</button>
+                <button class="btn-close">Hapus</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Badan Eksekutif Mahasiswa</td>
+            <td>Panitia</td>
+            <td>
+                <button class="btn">Edit</button>
+                <button class="btn-close">Hapus</button>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+    <a class="btn" href="#">+ Tambah User</a>
+</section>
+
+<section id="organisasi" class="section page">
+    <h2>Organisasi</h2>
+
+    <table>
+        <tr>
+            <th>Organisasi</th>
+            <th>Status</th>
+            <th>Aksi</th>
+        </tr>
+
+
+        <tr>
+            <td>BEM</td>
+            <td class="status-open">Masih Dibuka</td>
+            <td>
+                <details>
+                    <summary class="btn">Edit</summary>
+                    <div style="margin-top:10px; display:flex; flex-direction:column; gap:8px;">
+                        <button class="btn-open">Tutup</button>
+                        <button class="btn-close">Hapus</button>
+                    </div>
+                </details>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>DPM</td>
+            <td class="status-open">Masih Dibuka</td>
+            <td>
+                <details>
+                    <summary class="btn">Edit</summary>
+                    <div style="margin-top:10px; display:flex; flex-direction:column; gap:8px;">
+                        <button class="btn-open"> Tutup</button>
+                        <button class="btn-close"> Hapus</button>
+                    </div>
+                </details>
+            </td>
+        </tr>
+
+        
+        <tr>
+            <td>HIMAKOM</td>
+            <td class="status-close">Sudah Tutup</td>
+            <td>
+                <details>
+                    <summary class="btn">Edit</summary>
+                    <div style="margin-top:10px; display:flex; flex-direction:column; gap:8px;">
+                        <button class="btn-open">Buka</button>
+                        <button class="btn-close">Hapus</button>
+                    </div>
+                </details>
+            </td>
+        </tr>
+
+    </table>
+
+    <br>
+    <a class="btn" href="#">+ Tambah Organisasi</a>
+</section>
