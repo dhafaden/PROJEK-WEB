@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+<?php
+
+if (!defined('MVC_ACCESS')) {
+    header("Location: index.php");
+    exit();
+}
+?>
 <html>
 <head>
     <title>NILAVIA | Unila</title>
@@ -9,7 +16,7 @@
     <div class="container">
         <h1>Selamat Datang di NILAVIA</h1>
         <p>Sistem Pendaftaran Organisasi Mahasiswa Terpusat</p>
-        <a href="login.html" class="btn">Cari Organisasi-mu</a>
+        <a href="index.php?action=login" class="btn">Cari Organisasi-mu</a>
     </div>
 </body>
 </html>
