@@ -17,7 +17,7 @@ if (!defined('MVC_ACCESS')) {
     <div class="wrapper">
         <aside>
     <h2>NILAVIA</h2>
-    <a href="#organisasi">Cari Organisasi</a>
+    <a href="#organisasi">Data Organisasi</a>
     <a href="index.php?action=form">Daftar Organisasi</a>
     <a href="index.php?action=profil">Profil Saya</a>
     <a href="index.php?action=logout" class="logout">Logout</a>

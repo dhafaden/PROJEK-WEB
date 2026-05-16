@@ -117,7 +117,6 @@ if (!isset($stats)) {
     </table>
 
     <br>
-    <a class="btn" href="#">+ Tambah User</a>
 </section>
 
 <section id="organisasi" class="section page">

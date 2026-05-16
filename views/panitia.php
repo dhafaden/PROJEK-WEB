@@ -19,8 +19,6 @@ if (!defined('MVC_ACCESS')) {
     <aside>
         <h2>NILAVIA</h2>
         <a href="#data">Data Pendaftar</a>
-        <a href="#seleksi">Seleksi Pendaftar</a>
-        <a href="#kelola">Kelola Pendaftaran</a>
         <a href="index.php?action=logout" class="logout">Logout</a>
     </aside>
 
@@ -69,16 +67,6 @@ if (!defined('MVC_ACCESS')) {
                 }
                 ?>
             </table>
-        </div>
-
-        <div class="section page" id="seleksi">
-            <h2>Seleksi Pendaftar</h2>
-            <p>Pilih pendaftar dari tabel di atas untuk menerima atau menolak.</p>
-        </div>
-
-        <div class="section page" id="kelola">
-            <h2>Kelola Pendaftaran</h2>
-            <p>Gunakan tombol di tabel Data Pendaftar untuk mengubah status pendaftaran.</p>
         </div>
 
     </main>
